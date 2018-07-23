@@ -112,7 +112,7 @@ int input_init(char *params, void **config)
 	struct addrinfo *addrinfo = NULL, hints;
 	struct plugin_conf *conf = NULL;
 	char *port = NULL, *address = NULL;
-	int ai_family = AF_INET6; /* IPv6 is default */
+	int ai_family = AF_INET;
 	char dst_addr[INET6_ADDRSTRLEN];
 	int ret, ipv6_only = 0, retval = 0;
 
